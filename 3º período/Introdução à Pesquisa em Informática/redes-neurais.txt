@@ -1,0 +1,53 @@
+PRODUTO 1 - TEMAS E LINKS INTERESSANTES
+
+REDES NEURAIS
+
+===================================================================================================================
+Redes Neurais e Análise de Imagens 
+Descrição: Trabalho feito por alunos do curso de Ciência da Computação
+
+Link: https://www.youtube.com/watch?v=Ebw8ajD22Ns&list=PLRZnlVhTEl48PSYRRldfOM0kJvTRMxIMy&index=9
+		 
+===================================================================================================================
+
+Redes Neurais e Machine Learning | Nerdologia Tech
+
+Descrição: Neste episódio vamos ver como funcionam redes neurais que estão revolucionando a inteligência artificial.
+Link: https://www.youtube.com/watch?v=1_c_MA1F-vU
+===================================================================================================================
+
+APLICAÇÕES E BENEFÍCIOS OBTIDOS ATRAVÉS DAS REDES NEURAIS ARTIFICIAS (RNA)
+
+Descrição: Este artigo tem como objetivo expor os benefícios relacionados ao uso e a aplicação
+das redes neurais artificiais na resolução de problemas. 
+
+Link: https://www.facima.edu.br/instituto/revista/arquivos/ano2/revista_facima_ano_2_aplicacoes_beneficios.pdf
+
+===================================================================================================================
+
+Redes Neurais
+O que são e qual sua importância?
+
+Descrição: Redes neurais são sistemas de computação com nós interconectados que funcionam como os neurônios 
+do cérebro humano. Usando algoritmos, elas podem reconhecer padrões escondidos e correlações em dados brutos, 
+agrupá-los e classificá-los, e – com o tempo – aprender e melhorar continuamente. Este site tem como objetivo
+explicar melhor a funcionalidade das redes.
+
+Link: https://www.sas.com/pt_br/insights/analytics/neural-networks.html
+
+
+===================================================================================================================
+
+Introdução às Redes Neurais Artificiais
+Descrição: Explicação sobre o que são as redes neurais artificiais, primeiro de maneira intuitiva e visual e depois 
+com o modelo matemático
+
+Link: https://matheusfacure.github.io/2017/03/05/ann-intro/
+
+
+===================================================================================================================
+REDES NEURAIS: QUE DIABEISSO?....
+
+Descrição: Exemplo simplificado de uma rede neural.
+
+Link: https://www.youtube.com/watch?v=tWKQ3Fk42yw
