@@ -1,0 +1,49 @@
+SLIDE 1: Falar sobre nosso tópico
+
+SLIDE 2: Mostrar o que vai ser apresentado
+
+SLIDE 3: É um sistema formal que estuda funções recursivas computáveis, no que se refere a teoria da computabilidade, e fenômenos relacionados, como variáveis ligadas e substituição. 
+Os autores desenvolveram um modelo baseado em cálculo lambda para sistemas de tipos que permite explorar interações entre os conceitos de tipo, abstração de dados e polimorfismo.
+
+SLIDE 4: Tem como principal característica as entidades que podem ser utilizadas como argumentos e retornadas como valores de outras funções. Essa parte relevante de lambda cálculo para computação ficou conhecida como lambda cálculo não tipado. O lambda cálculo tipado - que é o que vamos apresentar - e o não tipado tem suas ideias aplicadas nos campos da lógica, teoria da recursão (computabilidade) e linguística.
+
+SLIDE 5: O CÁLCULO LAMBDA TIPADO: A diferença do cálculo lambda tipado é que cada variável deve ser explicitamente tipada quando introduzida como uma variável bound. Variável bound é variável que foi instanciada, então por ser instanciada ela é limitada à um certo escopo.
+
+FUNÇÃO SUCCESSOR: A função successor é dada da seguinte forma: value succ = fun (x: Int) x+1
+Essa função deve ser aplicada apenas a expressões lambda que representam inteiros e sugerem uma noção de tipagem.
+
+A notação infixa (que é onde os operadores são colocados entre os operandos em que eles atuam) x+1 é uma abreviação para a notação funcional + (x)(1). 
+Os símbolos 1 e + acima, por sua vez, devem ser vistos como abreviações para uma expressão pura
+de cálculo lambda para o número 1 e adição.
+
+SLIDE 6: FUNÇÃO TWICE: A função twice de inteiros para inteiros tem um parâmetro f cujo tipo é de Int -> Int e pode ser escrita dessa forma: value twice = fun(f: Int -> Int) fun (y:Int) f(f(y))
+
+Essa notação se aproxima da especificação funcional em lps tipadas, mas omite a especificação do tipo de resultado. 
+
+Podemos denotar o tipo do resultado com uma return keyword da seguinte forma: valor succ = fun(x: Int) (retorna Int) x + 1
+
+O tipo do resultado pode ser determinado a partir da forma da função body x + 1. Devemos omitir as especificações do tipo de resultado por razões de brevidade. Os mecanismos de inferência de tipos que permitem que essas informações sejam recuperadas durante a compilação vão ser explicadas ainda.
+
+SLIDE 7: As declarações de tipo são introduzidas pelo tipo de palavra-chave.
+Os nomes dos tipos começam com letras maiúsculas enquanto os nomes de valor e função começam com letras minúsculas.
+type IntPair = Int x Int
+type IntFun = Int + Int
+
+As declarações de tipo introduzem abreviações para as expressões de tipo; eles não criam novos tipos em nenhum sentido. Isso às vezes é expresso dizendo que usa-se strutural equivalence em tipos ao invés de name equivalence: dois tipos são equivalentes quando possuem a mesma estrutura, independentemente dos nomes que usamos como abreviaturas
+
+ESQUECI DE COLOCAR ESSA INFO NO SLIDE: O fato de um valor v ter um tipo T é indicado por v:T
+(3,4): IntPair
+succ: IntFun 
+
+SLIDE 8: O tipo de uma variável pode ser determinado a partir da forma do valor atribuído, então não precisamos introduzir variáveis por declarações de tipo na forma var:T. 
+Por exemplo, o fato de intPair abaixo ter o tipo IntPair pode ser determinado pelo fato de (3,4) ter o tipo Int × Int, que foi declarado equivalente a IntPair.
+value intPair: IntPair = (3,4)
+Contudo, se quisermos indicar o tipo de uma variável como parte de sua inicialização, podemos fazê-lo pela notação valor var:T= valor.
+value succ: Int -> f Int = fun(x: Int) x + 1
+
+SLIDE 9: Variáveis locais podem ser declaradas pelo let-in construct, que introduz uma nova variável inicializada (seguindo let) em um escopo local (uma expressão seguindo in). O valor da construção é o valor dessa expressão.
+
+SLIDE 10: O let-in construct pode ser definido em termos de expressões básicas de fun:
+
+let a:T = MinN (congruência) (fun(a:T)N)(M) 
+Os três tracinhos podem significar congruência, mas no nosso caso significa que MinN está sendo definido como outro nome usando (fun(a:T)N)(M)
