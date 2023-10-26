@@ -12,7 +12,121 @@ RESOLUÇÃO DE EXERCÍCIOS:
 		b) CARGA DE TRABALHO = 15 / 30
 		b) CARGA DE TRABALHO = 0.5 visitas por segundo
 		
+		-----------------------------------------------------------------------------------------------------
+		
+		c) UTILIZACAO 
+		
+				# USAMOS A FORMULA ABAIXO QUANDO CONSIDERAMOS OS VALORES INICIAIS
+				
+				UTILIZACAO = Bi / To
+				UTILIZACAO = 26 / 30
+				UTILIZACAO = 0.8667 (0.87) 
+		
+				DISPONIBILIDADE = 1 - UTILIZACAO
+				DISPONIBILIDADE = 1 - 0.87
+				DISPONIBILIDADE = 0.13 (13%)		
+		
+		-----------------------------------------------------------------------------------------------------
+				
+		d) Si (quanto tempo preciso para servir aquela visita)
+		d) Si = Bi / Ci
+		d) Si = 26 / 15
+		d) Si = 1.73 segundo por visita
+		
+		-----------------------------------------------------------------------------------------------------
+		
+		e) Ri (tempo de resposta do dispositivo)
+		e) Ri = Si   / DISPONIBILIDADE
+		e) Ri = 1.73 / 0.13
+		e) Ri = 13.30 segundos por visita
+		
+		-----------------------------------------------------------------------------------------------------
+		
+		f) Wi (tempo medio de espera) 
+		f) Wi = Ri - Si
+		f) Wi = 13.30 - 1.73
+		f) Wi = 11.57 segundos por visita 
+		
+		-----------------------------------------------------------------------------------------------------
+		
+		g) Taxa de chegada 10% a mais que a original:
+		
+				UTILIZACAO NOVA = Utilizacao antiga * 1.1
+				UTILIZACAO NOVA = 0.87 * 1.1
+				UTILIZACAO NOVA = 0.95
+				
+				DISPONIBILIDADE NOVA = 1 - UTILIZACAO NOVA
+				DISPONIBILIDADE NOVA = 1 - 0.95
+				DISPONIBILIDADE NOVA = 0.05
+				
+				Ri novo (tempo de resposta novo) = Si / DISPONIBILIDADE NOVA
+				Ri novo = 1.73 / 0.05 
+				Ri novo = 34.6 segundos
+				
+				Wi novo (tempo de espera novo) = Ri novo - Si
+				Wi novo = 34.6 - 1.73
+				Wi novo = 32.87
+				
+		-----------------------------------------------------------------------------------------------------
 
+		h) Taxa de chegada 10% a mais que a original AND dispositivo gastando metade do tempo:
+		
+				-> 	UTILIZACAO NOVA = Si novo * lambda i nova # (carga de trabalho nova que eu tenho apos o aumento de 10%)
+				
+					# NAO USAMOS A FORMULA DO COMECO. AGORA USAMOS A FORMULA ACIMA (PORQUE CONSIDERAMOS O TEOREMA DA UTILIZACAO)
+					
+					Si novo = (Si anterior / 2) # divide por 2 porque o dispositivo gasta metade do tempo
+					Si novo = 1.73 / 2 = 0.865
+					
+					Lambda i nova = CARGA DE TRABALHO anterior com os 10% a mais
+					Lambda i nova = 0.5 * 1.1 
+					Lambda i nova = 0.55
+					
+					UTILIZACAO NOVA = Si novo * lambda i nova
+					UTILIZACAO NOVA = 0.865 * 0.55
+					UTILIZACAO NOVA = 0.47
+					
+				-> DISPONIBILIDADE NOVA:
+				
+					DISPONIBILIDADE NOVA = 1 - UTILIZACAO NOVA
+					DISPONIBILIDADE NOVA = 1 - 0.47
+					DISPONIBILIDADE NOVA = 0.53
+										
+				-> TEMPO DE RESPOSTA (Ri) NOVO:
+				
+						TEMPO DE RESPOSTA NOVO = Si novo / DISPONIBILIDADE NOVA
+						TEMPO DE RESPOSTA NOVO = 0.865 / 0.53
+						TEMPO DE RESPOSTA NOVO = 1.63
+						
+		-----------------------------------------------------------------------------------------------------
+		
+		i) Taxa de chegada 10% a mais que a original AND tempo medio de RESPOSTA igual a 5s/v (5 segundos por visita)
+		
+				Si: variavel que quero achar
+				
+				Si = Ri / (1 + Ri * lambda i)
+				
+					# Veio do enunciado
+					Ri = 5
+					
+					# Calculando o lambda i novo					
+					lambda i novo = CARGA DE TRABALHO * 1.1
+					lambda i novo = 0.55
+					
+				Si = 5 / (1 + 13.30 * 0.55)
+				Si = 1.33333
+		
+		-----------------------------------------------------------------------------------------------------
+ 		
+		j) Taxa de chegada 10% a mais que a original AND tempo medio de ESPERA igual a 5s/v (5 segundos por visita)
+
+		Si: variavel que quero achar EM FUNÇÃO DO Wi (que eh o o tempo de espera)
+		
+		NAO FACO IDEIA
+				
+		-----------------------------------------------------------------------------------------------------
+		
+		
 				
 				
 	
