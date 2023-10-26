@@ -1,0 +1,18 @@
+RESOLUÇÃO DE EXERCÍCIOS:
+
+		a) To (Tempo total        -> eixo X no grafico   = 30 segundos
+		a) Ai (Visitas que chegam -> subidas no grafico  = 15 
+		a) Ci (Visitas atendidas  -> descidas no grafico = 15
+		a) Bi (Tempo de ocupação) = Tempo total - tempo sem fazer nada = To - 4 = 30 - 4 = 26 segundos
+		
+		-----------------------------------------------------------------------------------------------------
+		
+		b) CARGA DE TRABALHO (Taxa de chegada -> Lambda i) 
+		b) CARGA DE TRABALHO = Ai / To
+		b) CARGA DE TRABALHO = 15 / 30
+		b) CARGA DE TRABALHO = 0.5 visitas por segundo
+		
+
+				
+				
+	
