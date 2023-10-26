@@ -1,0 +1,36 @@
+Boa noite. Nós vamos apresentar o artigo "GST: Um transmissor de sinal gráfico inspirado no cérebro para segmentação de imagens biomédicas". 
+
+SUMÁRIO
+
+INTRODUÇÃO: O artigo apresenta um novo método de segmentação de imagens biomédicas baseado em grafos, que é inspirado no processamento de informações visuais do cérebro humano. O método proposto utiliza a construção de grafos para representar as relações entre os pixels da imagem e a propagação de sinais por meio de nós semânticos para realizar a segmentação. O objetivo é obter uma segmentação precisa e robusta, adaptável a diferentes tipos de imagens biomédicas
+
+CONFIGURAÇÕES EXPERIMENTAIS: As configurações experimentais do projeto incluem o uso de uma base de dados pública de imagens médicas chamada "BraTS 2018", que contém imagens de ressonância magnética do cérebro com diferentes tipos de tumores. As imagens foram pré-processadas para normalização e redimensionamento para um tamanho uniforme. 
+
+Os experimentos foram conduzidos usando o software Python, com o uso da biblioteca PyTorch para implementação do modelo GST e outros modelos de comparação. Essa tabela mostra as métricas que são medidas comuns de avaliação de desempenho para segmentação de imagem médica.
+
+RESULTADOS: Os resultados mostraram que o modelo GST superou os outros métodos de segmentação de imagem médica em termos de precisão e eficiência.
+
+RESULTADOS COMPARATIVOS EXPERIMENTAIS: 
+Os resultados comparativos experimentais do artigo foram realizados entre o modelo GST e outros modelos SOTA, que significa State-Of-The-Art, que são os melhores modelos que podem ser usados ​​para alcançar os resultados em uma tarefa.  
+
+Em relação as métricas, o IoU foi para avaliar o desempenho da segmentação semântica. Para a segmentação da instância, três métricas são usadas, incluindo o dice score (Obj-Dice), que mede o coeficiente de segmentação de nível de instância, F1score(F1), que mede a precisão de detecção de instâncias de glândula , e Hausdorff Distance(HD) no nível do objeto, que indica a semelhança entre o limite previsto da glândula e o do rótulo.
+
+RESULTADOS COMPARATIVOS EXPERIMENTAIS - TABELA: 
+
+Os experimentos foram conduzidos em três conjuntos de dados diferentes. Cada conjunto de dados contém imagens médicas de diferentes tipos e tamanhos, e cada imagem foi rotulada manualmente com uma máscara de segmentação para fins de treinamento e teste dos modelos de segmentação.
+
+Os resultados comparativos experimentais mostraram que o método proposto superou significativamente outros métodos de segmentação de imagens, incluindo abordagens baseadas em grafos e redes neurais convolucionais. Em termos de precisão e acurácia, o método proposto alcançou resultados notáveis, proporcionando segmentações mais precisas e consistentes.
+
+ESTUDO DE ABLAÇÃO: O estudo de ablação tem como objetivo analisar o impacto de diferentes componentes e etapas do método proposto na segmentação de imagens biomédicas. Ele analisa o impacto de diferentes componentes e etapas do método proposto na segmentação de imagens biomédicas.
+
+ESTUDO DE ABLAÇÃO - TABELA: As três primeiras linhas demonstram que o GST tem capacidade de modelagem de contexto mais forte do que kernels de convolução em profundidade de tamanho grande e GCN. Comparado com F(E(X)), F(T(E(X))) tem uma melhora de 3,1% em IoU, 6,8% em Obj_Dice, 12,2% na pontuação F1 e atinge um HD 18,7% menor. Estes resultados demonstram a eficácia do GST. As últimas três linhas de resultados de ablação mostram a superioridade do módulo de dobra sobre a convolução transposta e o upsampling.
+
+
+DISCUSSÃO: A discussão se concentra na avaliação do desempenho do método proposto e na comparação com outros métodos de segmentação de imagens.
+
+Os resultados experimentais mostram que o método proposto apresentou um desempenho superior em comparação com outros métodos de segmentação de imagens, incluindo abordagens baseadas em grafos e abordagens baseadas em redes neurais convolucionais.
+
+Além disso, o artigo destaca a importância da construção precisa do grafo na segmentação de imagens. 
+
+
+CONCLUSÃO: Em particular, o modelo GST conseguiu lidar com imagens médicas com variações de contraste, ruído e artefatos, que são desafios comuns em aplicações clínicas. O modelo GST também mostrou ser capaz de evitar interferência causada por características irrelevantes na imagem, o que resultou em segmentações mais precisas e consistentes. Além disso, o modelo GST é computacionalmente eficiente e requer menos tempo de processamento em comparação com outros métodos baseados em aprendizado profundo. Em resumo, os resultados do artigo sugerem que o modelo GST pode ser uma abordagem eficaz e promissora para a segmentação de imagens médicas.
